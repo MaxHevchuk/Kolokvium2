@@ -5,7 +5,7 @@
 from random import randint
 from numpy import prod
 
-arr = [randint(10, 50) for i in range(15)]
-total = prod(tuple(filter(lambda x: x % 7 == 0, arr)))
-print(f'Масив елементів:\n{arr}\n'
+arr = [randint(10, 50) for i in range(15)]  # створення масиву із рандомними елементами
+total = prod(tuple(filter(lambda x: x % 7 == 0, arr)))  # фільтр та перемноження елементів, які кратні 7
+print(f'Масив елементів:\n{arr}\n'  # виведення
       f'Добуток елементів, які кратні 7:\n{total}')

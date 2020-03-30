@@ -6,8 +6,8 @@
 from random import randint
 from numpy import prod
 
-arr = [randint(50, 100) for i in range(10)]
-num = int(input('Введіть число:\n>>> '))
-total = prod(tuple(filter(lambda x: x < num, arr)))
-print(f'Масив елементів:\n{arr}\n'
+arr = [randint(50, 100) for i in range(10)]  # створення масиву із рандомними елементами
+num = int(input('Введіть число:\n>>> '))  # введення числа
+total = prod(tuple(filter(lambda x: x < num, arr)))  # фільтр та перемноження чисел, що менше заданого числа
+print(f'Масив елементів:\n{arr}\n'  # виведення
       f'Сума елементів, які більші за {num}:\n{total}')

@@ -2,7 +2,8 @@
 # мінімальне значення.
 # Гевчук Максим КН-А
 
-from numpy import arange
+import random
 
-arr = arange(1, 15)
-print(f'Мінімальне значення: {min(arr)}')
+arr = [random.randint(-10, 10) for i in range(15)]  # створюється масив із рандомних елементів
+print(f'Масив елементів:\n{arr}\n'
+      f'Мінімальне значення:\n{min(arr)}')  # виведення мінімального елементу

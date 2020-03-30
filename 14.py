@@ -4,6 +4,6 @@
 
 from numpy import arange
 
-arr_t = arange(1, 11)
-arr_s = list(map(lambda x: round((9.8 * x ** 2) / 2, 1), arr_t))
-print(f'Масив, елементи якого є відстанями:\n{arr_s}')
+arr_t = arange(1, 11)  # створення масиву із часом
+arr_s = list(map(lambda x: round((9.8 * x ** 2) / 2, 1), arr_t))  # за формулою s=gt^2/2 знаходимо масив із відстанями
+print(f'Масив, елементи якого є відстанями:\n{arr_s}')  # виведення

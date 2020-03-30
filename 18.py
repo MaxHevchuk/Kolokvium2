@@ -4,7 +4,7 @@
 
 from numpy import prod
 
-arr = [int(input(f'Введіть {i+1}-ий елемент: ')) for i in range(10)]
-total = prod(tuple(filter(lambda x: x < 0, arr)))
-print(f'Масив елементів:\n{arr}\n'
+arr = [int(input(f'Введіть {i + 1}-ий елемент: ')) for i in range(10)]  # введення елементів масиву
+total = prod(tuple(filter(lambda x: x < 0, arr)))  # фільтр та перемноження елементів < 0
+print(f'Масив елементів:\n{arr}\n'  # виведення
       f'Добуток елементів, які менші нуля:\n{total}')

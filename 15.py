@@ -4,7 +4,7 @@
 
 from random import randint
 
-arr = [randint(100, 200) for i in range(20)]
-total = sum(tuple(filter(lambda x: x % 2 == 0, arr)))
-print(f'Масив елементів:\n{arr}\n'
+arr = [randint(100, 200) for i in range(20)]  # створення масиву із рандомними елементами
+total = sum(tuple(filter(lambda x: x % 2 == 0, arr)))  # фільр і сума парних елементів
+print(f'Масив елементів:\n{arr}\n'  # виведення
       f'Сума парних елементів:\n{total}')

@@ -5,7 +5,7 @@
 
 from random import randint
 
-arr = [randint(200, 300) for i in range(20)]
-total = sum(tuple(filter(lambda x: x % 2 == 3, arr)))
-print(f'Масив елементів:\n{arr}\n'
+arr = [randint(200, 300) for i in range(20)]  # створення масиву із рандомних елементів
+total = sum(tuple(filter(lambda x: x % 2 == 3, arr)))  # сума та перемноження елементів остача від ділення яких на 2 = 3
+print(f'Масив елементів:\n{arr}\n'  # виведеня
       f'Сума елементів, у яких остача від ділення на 2 дорівнює 3:\n{total}')
