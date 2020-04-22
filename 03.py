@@ -3,5 +3,5 @@
 # Гевчук Максим КН-А
 
 surnames = ['Smith', 'Johnson', 'Williams', 'Jones', 'Brown']  # створюється масив із прізвищ
-for name in surnames[::-1]:  # вивід прізвищ, починаючи з останнього
+for name in reversed(surnames):  # вивід прізвищ, починаючи з останнього
     print(name)
